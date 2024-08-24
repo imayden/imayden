@@ -1,1 +1,53 @@
+@import 'variables';
+
 /* You can add global styles to this file, and also import other style files */
+
+// styles.scss
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-bg-light;
+    color: $color-text-light;
+    font-family: Neue Montreal, sans-serif;
+
+    width: 100%; 
+    overflow-x: hidden; 
+    box-sizing: border-box; 
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-block: 0.5rem;
+  }
+  
+  // Dark Mode
+  @media (prefers-color-scheme: dark) {
+    body, html {
+      background-color: $color-bg-dark;
+      color: $color-text-dark;
+    }
+  
+    .btn-primary {
+      background-color: $color-primary-dark;
+      color: $color-text-dark;
+    }
+  
+  }
+  
+  // Light Mode (Default)
+  @media (prefers-color-scheme: light), not all and (prefers-color-scheme) {
+    body, html {
+      background-color: $color-bg-light;
+      color: $color-text-light;
+    }
+
+    .btn-primary {
+      background-color: $color-primary-light;
+      color: $color-text-light;
+    }
+
+  }
+  

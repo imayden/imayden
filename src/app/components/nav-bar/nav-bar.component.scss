@@ -1,0 +1,140 @@
+@import '../../../variables';
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    background-color: none;
+    width: 100vw;
+    padding-block: 1rem;
+
+    .logo {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../../../../public/assets/light-logo.png');
+        aspect-ratio: 1/1;
+        width: 100%;
+        height: 100%;
+        margin-inline: 1rem;
+        max-height: 4rem;
+        max-width: 4rem;
+        border-radius: 9999rem;
+        box-sizing: border-box;
+    }
+    @media (prefers-color-scheme: dark) {
+        .logo {
+            background-image: url('../../../../public/assets/dark-logo.png');
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $color-nav-border;
+        border-radius: 9999rem;
+        padding-inline: 0.45rem;
+        box-sizing: border-box;
+        background-color: $color-nav-light;
+        backdrop-filter: blur(10rem);
+        a {
+            text-decoration: none;
+            color: $color-text-light;
+            opacity: 0.5;
+            cursor: pointer;
+            padding-inline: 1rem;
+            padding-block: 1rem;
+            margin:0;
+            border-radius: 9999rem;
+            transition: all 0.25s ease-in-out;
+            width: 5rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+        a:hover {
+            opacity: 1;
+            transform: scale(1.05);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.08));
+        }
+
+        a:active{
+            transform: scale(0.95);
+        }
+        @media (prefers-color-scheme: dark) {
+            a {
+                color: $color-text-dark;
+            }
+        }
+    }
+    @media (prefers-color-scheme: dark) {
+        nav {
+            background-color: $color-nav-dark;
+            a {
+                color: $color-text-dark;
+            }
+            a:hover {
+                background-image: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+            }
+        }
+    }
+
+    .link {
+        height: 4rem;
+        width: 4rem;
+        aspect-ratio: 1/1;
+        margin-inline: 1rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9999rem;
+        border: 1px solid $color-nav-border;
+        background-color: $color-nav-light;
+
+        .email{
+            opacity: 0.5;
+            cursor: pointer;
+            padding-inline: 0.875rem;
+            padding-block: 0.75rem;
+            margin:0;
+            font-size: 1.5rem;
+            aspect-ratio: 1/1;
+            border-radius: 9999rem;
+            transition: all 0.25s ease-in-out;
+        }
+        .email:hover {
+            opacity: 1;
+            transform: scale(1.05);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.08));
+        }
+
+        .email:active {
+            transform: scale(0.95);
+        }
+
+        
+        @media (prefers-color-scheme: dark) {
+            .email {
+                color: $color-text-dark;
+            }
+            .email:hover {
+                opacity: 1;
+                background-image: linear-gradient(rgba(225, 225, 225, 0.08), rgba(225, 225, 225, 0.02));
+            }
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .link {
+            background-color: $color-nav-dark;
+        }
+    }
+
+}
