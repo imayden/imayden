@@ -8,7 +8,7 @@
   width: 90vw;
   padding: 0.5rem;
   max-width: 1440px;
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/10;
   border-radius: 2rem;
   background-color: rgba(0, 0, 0, 0.05);
   box-shadow: 0 0 50px $color-box-shadow-light;
@@ -16,33 +16,144 @@
   cursor: pointer;
 
   .content {
-    border: 1px solid rgba(125, 125, 125, 0.3);
+    border: 1.5px solid rgba(125, 125, 125, 0.25);
     border-radius: 1.5rem;
     overflow: hidden;
-    padding-block: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 0;
     padding-inline: 2rem;
     overflow: hidden;
     height: 100%;
     transition: all 0.25s ease-in-out;
-    background-image: linear-gradient(rgba(225,225,225, 0.95), rgba(225,225,225, 0.5), rgba(225,225,225, 0.25),rgba(0,0,0, 0.05));
+    // background-color: rgba(225,225,225, 1);
+    // background-image: linear-gradient(rgba(225,225,225, 1), rgba(225,225,225, 0.75), rgba(225,225,225, 0.5),rgba(0,0,0, 0.02));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+
+    .header {
+      width: 100%;
+    }
+
+    .content-area {
+      width: 80vw;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 0;
+      padding-top: 4rem;
+      transition: all 0.5s ease-in-out;
+    }
+
+    @media screen and (max-width: 991px) {
+      .content-area {
+        padding-top: 0;
+      }
+    }
+
+    .content-header,
+    .content-card {
+      width: 77vw;
+      max-width: 1280px;
+      border: 1px solid $color-nav-border;
+    }
+
+    .content-header {
+      height: 2.5rem;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      backdrop-filter: blur(10rem);
+      background-color: rgba(155, 155, 155, 0.15);
+      box-shadow: 0 0 50px $color-box-shadow-light;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+
+      .work-title {
+        margin: 1rem;
+        font-size: small;
+        opacity: 0.5;
+      }
+
+      .dots {
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.5;
+
+        span {
+          margin-right: 0.25rem;
+          font-size: 0.6rem;
+        }
+      }
+
+    }
+
+    .content-card {
+      overflow: hidden;
+      backdrop-filter: blur(10rem);
+      background-color: rgba(155, 155, 155, 0.15);
+      height: 85vh;
+      max-height: 50rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      box-shadow: 0 0 50px $color-box-shadow-light;
+      transition: all 0.25s ease-in-out;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+
+      .cover-container {
+        width: 100%;
+        height: 100%;
+
+        .cover {
+          width: 100%;
+          height: 100%;
+        }
+
+        @media screen and (max-width: 768px) {
+          .cover {
+            height: 75%;
+          }
+        }
+      }
+    }
   }
 
-  .content:hover{
-    border: 1px solid rgba(125, 125, 125, 0.75);
+
+  .content:hover {
+    border: 1.5px solid rgba(125, 125, 125, 0.5);
+
+    .content-area {
+      padding-top: 1rem;
+    }
   }
 
-  .reg-text{
+  .reg-text {
     opacity: 0.5;
   }
-
 }
+
 @media (prefers-color-scheme: dark) {
   .showcase {
     background-color: rgba(255, 255, 255, 0.03);
     box-shadow: 0 0 50px $color-box-shadow-dark;
 
-    .content{
-      background-image: linear-gradient(rgba(225,225,225, 0.05), rgba(0,0,0, 0.15), rgba(0,0,0, 0.35),rgba(0,0,0, 0.5));
+    .content {
+      background-image: linear-gradient(rgba(225, 225, 225, 0.05), rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.5));
     }
   }
 }
@@ -57,4 +168,11 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media screen and (max-width: 768px) {
+  .showcase {
+    aspect-ratio: 6/5;
+  }
+
 }
