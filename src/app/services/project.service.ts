@@ -34,10 +34,9 @@ export class ProjectService {
       title: 'Redmi 11 Series · Showcase',
       subtitle: 'Redmi, 2021',
       description: 'The product showcase site for Redmi 11 Series, an animated site built with React.',
-      link: 'https://miui13.home.miui.com',
+      link: 'https://www.mi.com/global/product/redmi-note-11-pro-plus-5g/',
       media: {
         type: 'video',
-        // src: 'https://www.youtube.com/embed/7SIDnTiQGmM?autoplay=1&loop=1&playlist=7SIDnTiQGmM&controls=0&mute=1'
         src: "https://www.youtube.com/embed/QJ0E-x93erM?autoplay=1&loop=1&mute=1&controls=0&playlist=QJ0E-x93erM&vq=hd1080"
       }
     },
