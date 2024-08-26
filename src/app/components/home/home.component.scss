@@ -42,7 +42,7 @@
         }
 
         .nested-tile {
-            border: 1px solid $color-nav-border;
+            border: 0.5px solid $color-nav-border;
             box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.25);
             background-color: $content-card;
             border-radius: 2rem;
@@ -70,7 +70,7 @@
         .outlined-tile{
             display: flex;
             flex-direction: column;
-            border: 1px solid $color-nav-border;
+            border: 0.5px solid $color-nav-border;
             align-items: start;
             justify-content: center;
             box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.25);
@@ -80,8 +80,8 @@
 
             .img2-1 {
                 vertical-align: middle;
-                width: 100%;
-                height: auto;
+                width: auto;
+                height: 100%;
                 object-fit: cover;
                 display: inline-block;
                 transition: all 0.25s ease-in-out;
