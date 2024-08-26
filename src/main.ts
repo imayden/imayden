@@ -20,6 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 })
 export class App {
   name = 'Angular';
+
+  
 }
 
 bootstrapApplication(AppComponent, {

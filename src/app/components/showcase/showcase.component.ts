@@ -9,22 +9,36 @@ import {
   PLATFORM_ID
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { SafeUrlPipe } from '../../pipes/safe-url.pipe';
+import { AsyncPipe, JsonPipe, NgFor, NgIf } from '@angular/common';
+import { ProjectService, Project } from '../../services/project.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-showcase',
   standalone: true,
-  imports: [],
+  imports: [SafeUrlPipe, AsyncPipe, JsonPipe, NgFor, NgIf],
   templateUrl: './showcase.component.html',
-  styleUrls: ['./showcase.component.scss'],  // Corrected property name
+  styleUrls: ['./showcase.component.scss'],  
   encapsulation: ViewEncapsulation.Emulated
 })
 export class ShowcaseComponent implements AfterViewInit, OnInit {
-  @ViewChild('animateElement') animateElement!: ElementRef;  // Changed to @ViewChild
+
+  projects$!: Observable<Project[]>; 
+
+  @ViewChild('animateElement') animateElement!: ElementRef;  
   observer!: IntersectionObserver;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object, 
+    private sanitizer: DomSanitizer,
+    private projectService: ProjectService
+  ) { 
+    this.projects$ = this.projectService.projects$;
+  }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -52,5 +66,13 @@ export class ShowcaseComponent implements AfterViewInit, OnInit {
     if (isPlatformBrowser(this.platformId) && this.observer) {
       this.observer.disconnect();
     }
+  }
+
+  openLink(url: string): void {
+    window.open(url, '_blank');
+  }
+
+  safeUrl(url: string): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 }

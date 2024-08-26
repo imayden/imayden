@@ -1,12 +1,13 @@
 <div #animateElement class="fade-in-up">
 
-  <!-- MIUI 13 / HyperOS -->
-  <div class="showcase" onclick="window.open('https://miui13.home.miui.com', '_blank')">
+
+  <div *ngFor="let project of projects$ | async" class="showcase" (click)="openLink(project.link)">
     <div class="content">
       <div class="header">
         <div class="title">
-          <h1>Title</h1>
-          <p>Company/Client, 2021 <span class="reg-text"> - Description</span></p>
+          <h1>{{ project.title }}</h1>
+          <p>{{ project.subtitle }} </p>
+          <p><span class="reg-text">{{ project.description }}</span></p>
         </div>
       </div>
       <div class="content-area">
@@ -16,86 +17,21 @@
             <span style="color: yellow;">⬤</span>
             <span style="color: green;">⬤</span>
           </div>
-          <p class="work-title">Section Title</p>
-
+          <p class="work-title">{{ project.title }}</p>
         </div>
         <div class="content-card">
           <div class="cover-container">
-            <iframe class="cover" 
-              src="https://www.youtube.com/embed/7SIDnTiQGmM?autoplay=1&loop=1&playlist=7SIDnTiQGmM&controls=0&mute=1"
-              title="YouTube video player" frameborder="0" style="pointer-events: none;"
-              allow="autoplay; encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            <!-- Display video or image by media types -->
+            <iframe *ngIf="project.media.type === 'video'" class="cover"
+                    [src]="project.media.src | safeUrl"
+                    title="YouTube video player" frameborder="0" style="pointer-events: none;"
+                    allow="autoplay; encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
-
+            <img *ngIf="project.media.type === 'image'" class="img" [src]="project.media.src">
           </div>
         </div>
       </div>
     </div>
   </div>
-
-  <!-- Dark Mode -->
-  <div class="showcase" onclick="window.open('https://miui13.home.miui.com', '_blank')">
-    <div class="content">
-      <div class="header">
-        <div class="title">
-          <h1>Title</h1>
-          <p>Company/Client, 2021 <span class="reg-text"> - Description</span></p>
-        </div>
-      </div>
-      <div class="content-area">
-        <div class="content-header">
-          <div class="dots">
-            <span style="color: red;">⬤</span>
-            <span style="color: yellow;">⬤</span>
-            <span style="color: green;">⬤</span>
-          </div>
-          <p class="work-title">Section Title</p>
-
-        </div>
-        <div class="content-card">
-          <div class="cover-container">
-            <iframe class="cover" 
-              src="https://www.youtube.com/embed/7SIDnTiQGmM?autoplay=1&loop=1&playlist=7SIDnTiQGmM&controls=0&mute=1"
-              title="YouTube video player" frameborder="0" style="pointer-events: none;"
-              allow="autoplay; encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Kwai -->
-  <div class="showcase" onclick="window.open('https://miui13.home.miui.com', '_blank')">
-    <div class="content">
-      <div class="header">
-        <div class="title">
-          <h1>Title</h1>
-          <p>Company/Client, 2021 <span class="reg-text"> - Description</span></p>
-        </div>
-      </div>
-      <div class="content-area">
-        <div class="content-header">
-          <div class="dots">
-            <span style="color: red;">⬤</span>
-            <span style="color: yellow;">⬤</span>
-            <span style="color: green;">⬤</span>
-          </div>
-          <p class="work-title">Section Title</p>
-
-        </div>
-        <div class="content-card">
-          <div class="cover-container">
-            <iframe class="cover" 
-              src="https://www.youtube.com/embed/7SIDnTiQGmM?autoplay=1&loop=1&playlist=7SIDnTiQGmM&controls=0&mute=1"
-              title="YouTube video player" frameborder="0" style="pointer-events: none;"
-              allow="autoplay; encrypted-media;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-            </iframe>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 </div>
