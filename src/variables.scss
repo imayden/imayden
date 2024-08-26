@@ -1,12 +1,35 @@
 // variables.scss
-$color-nav-border: rgba(125, 125, 125, 0.35);
 
-// Light mode variables
-$color-bg-light: #e1e1e1;
-$color-text-light: #454545;
-$color-primary-light: #007bff;
-$color-nav-light: rgba(0, 0, 0, 0.02);
-$color-box-shadow-light: rgba(0, 0, 0, 0.1);
+// border
+$color-nav-border: rgba(125, 125, 125, 0.35);
+$content-border:1.5px solid rgba(125, 125, 125, 0.35);
+$content-border-hover: 1.5px solid rgba(125, 125, 125, 0.75);
+
+// bg colors
+$content-card: rgba(155, 155, 155, 0.15);
+$content-header: rgba(155, 155, 155, 0.15);
+
+/* Deprecated Light mode variables
+// $color-bg-light: #e1e1e1;
+// $color-text-light: #454545;
+// $color-primary-light: #007bff;
+// $color-nav-light: rgba(0, 0, 0, 0.02);
+// $color-box-shadow-light: rgba(0, 0, 0, 0.1);
+// $nav-btn-hover-light-theme: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.04));
+// $logo-image-light: url('../public/assets/light-logo.png');
+// $showcase-bg-light:rgba(225, 225, 225, 0.8); */
+
+
+// All Dark mode variables
+$color-bg-light:#121212;
+$color-text-light:  #eee;
+$color-primary-light: #bb86fc;
+$color-nav-light: rgba(255, 255, 255, 0.02);
+$color-box-shadow-light: rgba(0, 0, 0, 0.8);
+$nav-btn-hover-light-theme:  linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+$logo-image-light: url('../public/assets/dark-logo.png');
+$showcase-bg-light:rgba(255, 255, 255, 0.03);
+
 
 // Dark mode variables
 $color-bg-dark: #121212;
@@ -14,3 +37,6 @@ $color-text-dark: #eee;
 $color-primary-dark: #bb86fc;
 $color-nav-dark: rgba(255, 255, 255, 0.02);
 $color-box-shadow-dark: rgba(0, 0, 0, 0.8);
+$nav-btn-hover-dark-theme: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+$logo-image-dark: url('../public/assets/dark-logo.png');
+$showcase-bg-dark:rgba(255, 255, 255, 0.03);

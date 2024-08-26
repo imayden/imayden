@@ -33,7 +33,7 @@ export class ProjectService {
     {
       title: 'Redmi 11 Series · Showcase',
       subtitle: 'Redmi, 2021',
-      description: 'The smartphone product showcase site for Redmi 11 Series, an animated site built with React.',
+      description: 'The product showcase site for Redmi 11 Series, an animated site built with React.',
       link: 'https://miui13.home.miui.com',
       media: {
         type: 'video',

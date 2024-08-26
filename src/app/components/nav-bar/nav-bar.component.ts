@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
-
+  sendEmail(): void {
+    window.open('mailto:ayden.yiming.deng@gmail.com', '_blank');
+  }
 }
