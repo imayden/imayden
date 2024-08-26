@@ -12,7 +12,7 @@
         width: 90vw;
         padding: 1.5rem;
         max-width: 1280px;
-        border-radius: 2rem;
+        // border-radius: 2rem;
         transition: all 0.25s ease-in-out;
 
         display: grid;
@@ -20,18 +20,19 @@
         gap: 1.5rem;
 
         .tile,
-        .tile-nest, .outlined-tile {
+        .tile-nest,
+        .outlined-tile {
             // border: 1px solid #fff;
             aspect-ratio: 2/1;
             border-radius: 2rem;
         }
 
-        .tile{
+        .tile {
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: center;
-            
+
 
         }
 
@@ -67,7 +68,8 @@
         .nested-tile:hover {
             transform: scale(1.02);
         }
-        .outlined-tile{
+
+        .outlined-tile {
             display: flex;
             flex-direction: column;
             border: 0.5px solid $color-nav-border;
@@ -92,6 +94,94 @@
             transform: scale(1.02);
         }
 
+    }
+
+    .exp-client {
+        padding-block: 1rem;
+        padding-inline: 2rem;
+        width: 90vw;
+        padding: 1.5rem;
+        max-width: 1280px;
+        transition: all 0.25s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .exp-title {
+            // text-align: center;
+            // width: 100%;
+        }
+
+        .brand-logos {
+            display: flex;
+            max-width: 1280px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            // gap: 4rem;
+            transition: all 0.25s ease-in-out;
+            justify-content: center;
+            align-items: center;
+
+            .logo-pair {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                // gap: 4rem;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    vertical-align: middle;
+                    width: auto;
+                    height: auto;
+                    max-height: 4rem;
+                    object-fit: cover;
+                    display: inline-block;
+                    transition: all 0.25s ease-in-out;
+                    margin-inline: 2rem;
+                }
+
+            }
+
+        }
+
+        @media screen and (max-width: 1280px) {
+            .brand-logos {
+                transform: scale(0.85);
+            }
+        }
+
+        @media screen and (max-width: 1180px) {
+            .brand-logos {
+                transform: scale(0.75);
+            }
+        }
+
+        @media screen and (max-width: 991px) {
+            .brand-logos {
+                flex-direction: column;
+                width: unset;
+                gap: 2rem;
+                transform: scale(1);
+                .logo-pair {
+                    justify-content: space-between;
+                }
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .brand-logos {
+                transform: scale(0.8);
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .brand-logos {
+                transform: scale(0.7);
+            }
+        }
     }
 }
 
