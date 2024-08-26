@@ -1,6 +1,171 @@
+@import '../../../variables';
+
 .footer {
     max-width: 1280px;
-    background-color: red;
+    // border: 1px solid #fff;
     width: 90vw;
     padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+
+    .lowerright {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            img {
+                vertical-align: middle;
+                max-width: 100%;
+                display: inline-block;
+                opacity: 0.5;
+                transition: all 0.25s ease-in-out;
+            }
+
+            a {
+                color: $color-text-light;
+                text-decoration: none;
+                opacity: 0.8;
+                transition: all 0.25s ease-in-out;
+                // height: 2rem;
+            }
+
+            transition: all 0.25s ease-in-out;
+            cursor: pointer;
+            height: 2rem;
+
+
+
+        }
+
+        h6 {
+            opacity: 0.5;
+            margin-bottom: 1.5rem;
+        }
+
+        p:hover {
+            img {
+                opacity: 1;
+            }
+
+            a {
+                opacity: 1;
+            }
+
+            transform: scale(1.1);
+        }
+
+
+
+
+
+    }
+
+    .upperleft,
+    .lowest {
+        display: flex;
+        flex-direction: column;
+        gap: 1.4rem;
+        align-items: start;
+        justify-content: start;
+
+        .logo-area {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            align-items: center;
+            justify-content: start;
+
+            .name {
+                font-size: 1.25rem;
+            }
+
+            .title {
+                font-size: 0.75rem;
+                opacity: 0.5;
+            }
+
+            img {
+                vertical-align: middle;
+                width: 3rem;
+                height: 3rem;
+                object-fit: cover;
+                display: inline-block;
+                transition: all 0.25s ease-in-out;
+            }
+        }
+
+
+
+        .copyright {
+
+            text-align: right;
+            font-size: 0.75rem;
+            opacity: 0.75;
+        }
+    }
+
+    .lowest {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .upperleft {
+            display: none;
+        }
+
+
+        .lowest {
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+
+            .logo-area {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                align-items: center;
+                justify-content: end;
+
+                .name {
+                    font-size: 1rem;
+                    text-align: center;
+                }
+
+                .title {
+                    font-size: 0.75rem;
+                    text-align: center;
+                }
+
+                img {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    transition: all 0.25s ease-in-out;
+                }
+            }
+
+            .copyright {
+                text-align: center;
+                line-height: 1rem;
+                opacity: 0.5;
+            }
+        }
+
+
+    }
 }

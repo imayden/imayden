@@ -31,9 +31,9 @@ export class ProjectService {
     },
 
     {
-      title: 'Redmi 11 Series · Showcase',
+      title: 'Redmi Note 11 Series · Showcase',
       subtitle: 'Redmi, 2021',
-      description: 'The product showcase site for Redmi 11 Series, an animated site built with React.',
+      description: 'The smartphone product showcase site for Redmi Note 11 Series, an animated site built with React.',
       link: 'https://www.mi.com/global/product/redmi-note-11-pro-plus-5g/',
       media: {
         type: 'video',
@@ -42,15 +42,26 @@ export class ProjectService {
     },
 
     {
-      title: 'HyperOS · Dark Theme UI',
-      subtitle: 'HyperOS, 2021',
-      description: 'The product showcase site for Redmi 11 Series, an animated site built with React.',
-      link: 'https://www.mi.com/global/product/redmi-note-11-pro-plus-5g/',
+      title: 'HyperOS · Dark Theme',
+      subtitle: 'MIUI / HyperOS, 2021',
+      description: 'The design and developmeent of the Dark Theme UI for MIUI (legacy version of Xiaomi HyperOS).',
+      link: 'https://www.mi.com/global/hyperos',
       media: {
-        type: 'image',
-        src: 'https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-12-lite/929ca834a3eff100dea8137ae43d6584.png'
+        type: 'video',
+        src: 'https://www.youtube.com/embed/5MQR4ByVWRE?autoplay=1&loop=1&playlist=5MQR4ByVWRE&controls=0&mute=1'
       }
     },
+
+    // {
+    //   title: 'HyperOS · Dark Theme UI',
+    //   subtitle: 'HyperOS, 2021',
+    //   description: 'The product showcase site for Redmi 11 Series, an animated site built with React.',
+    //   link: 'https://www.mi.com/global/product/redmi-note-11-pro-plus-5g/',
+    //   media: {
+    //     type: 'image',
+    //     src: 'https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-12-lite/929ca834a3eff100dea8137ae43d6584.png'
+    //   }
+    // },
 
     {
       title: 'Creator Marketplace',
@@ -59,7 +70,7 @@ export class ProjectService {
       link: 'https://miui13.home.miui.com',
       media: {
         type: 'video',
-        src: 'https://www.youtube.com/embed/7SIDnTiQGmM?autoplay=1&loop=1&playlist=7SIDnTiQGmM&controls=0&mute=1'
+        src: 'https://www.youtube.com/embed/5MQR4ByVWRE?autoplay=1&loop=1&playlist=5MQR4ByVWRE&controls=0&mute=1'
       }
     },
   ]);
