@@ -7,10 +7,12 @@
     align-self: center;
     background-color: none;
     width: 94vw;
-    margin-block: 1.5rem;
-    max-width: 1280px;
+    margin-block: 1rem;
+    max-width: 1296px;
 
     .logo {
+        background-color: $color-nav-light;
+        backdrop-filter: $bg-blur;
         background-image: $logo-image-light; 
         background-size: cover;
         background-position: center;
@@ -67,7 +69,7 @@
         padding-inline: 0.45rem;
         box-sizing: border-box;
         background-color: $color-nav-light;
-        backdrop-filter: blur(10rem);
+        backdrop-filter: $bg-blur;
 
         a {
             text-decoration: none;
@@ -131,6 +133,7 @@
         border-radius: 9999rem;
         border: 1px solid $color-nav-border;
         background-color: $color-nav-light;
+        backdrop-filter: $bg-blur;
 
         .email {
             opacity: 0.5;

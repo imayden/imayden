@@ -1,11 +1,28 @@
-.app{
+.app {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: relative; 
 
-    hr{
+    hr {
         width: 100vw;
     }
+
+    .navbar {
+        position: fixed; /* 固定位置 */
+        top: 0; /* 距离顶部 0 */
+        left: 0; /* 距离左侧 0 */
+        right: 0; /* 距离右侧 0 */
+        display: flex; /* 使用 Flexbox 布局 */
+        justify-content: center; /* 内容居中 */
+        width: 100%;
+        z-index: 1000; /* 设置较大的 z-index 以确保其位于其他元素之上 */
+    }
+
+    .router-outlet {
+        margin-top: 6rem; 
+    }
+
 }

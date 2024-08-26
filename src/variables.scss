@@ -5,9 +5,11 @@ $color-nav-border: rgba(125, 125, 125, 0.35);
 $content-border:1.5px solid rgba(125, 125, 125, 0.35);
 $content-border-hover: 1.5px solid rgba(125, 125, 125, 0.75);
 
+
 // bg colors
 $content-card: rgba(155, 155, 155, 0.15);
 $content-header: rgba(155, 155, 155, 0.15);
+$bg-blur: blur(50rem);
 
 /* Deprecated Light mode variables
 // $color-bg-light: #e1e1e1;
@@ -24,7 +26,7 @@ $content-header: rgba(155, 155, 155, 0.15);
 $color-bg-light:#121212;
 $color-text-light:  #eee;
 $color-primary-light: #bb86fc;
-$color-nav-light: rgba(255, 255, 255, 0.02);
+$color-nav-light: rgba(37, 37, 37, 0.5);
 $color-box-shadow-light: rgba(0, 0, 0, 0.8);
 $nav-btn-hover-light-theme:  linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
 $logo-image-light: url('../public/assets/dark-logo.png');
@@ -35,7 +37,7 @@ $showcase-bg-light:rgba(255, 255, 255, 0.03);
 $color-bg-dark: #121212;
 $color-text-dark: #eee;
 $color-primary-dark: #bb86fc;
-$color-nav-dark: rgba(255, 255, 255, 0.02);
+$color-nav-dark: rgba(37, 37, 37, 0.5);
 $color-box-shadow-dark: rgba(0, 0, 0, 0.8);
 $nav-btn-hover-dark-theme: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
 $logo-image-dark: url('../public/assets/dark-logo.png');
