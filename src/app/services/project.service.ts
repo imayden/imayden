@@ -64,7 +64,7 @@ export class ProjectService {
     // },
 
     {
-      title: 'Creator Marketplace',
+      title: 'Kwai Distrubution Marketplace',
       subtitle: 'Kwai, 2020',
       description: 'Description',
       link: 'https://miui13.home.miui.com',
