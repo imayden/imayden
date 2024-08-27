@@ -97,13 +97,13 @@
 
                 .greeting {
                     margin-left: 1.5rem;
+                    margin-right: 1.5rem;
                     font-family: "Gloock", serif;
                     font-weight: 400;
                     font-style: normal;
                     font-size: 1.2rem;
                     text-align: left;
                     // line-height: 90%;
-                    font-family: "Gloock", serif;
 
                     .ayden {
                         font-style: italic;
@@ -115,6 +115,7 @@
 
                 .banner-slogan {
                     margin-left: 1.5rem;
+                    margin-right: 1.5rem;
                     margin-bottom: 1rem;
                     font-size: 1.8rem;
                     font-family: "Gloock", serif;
@@ -130,6 +131,7 @@
 
                 .personal-title {
                     margin-left: 1.5rem;
+                    margin-right: 1.5rem;
                     opacity: 0.8;
                     line-height: 1.5rem;
 
@@ -144,7 +146,7 @@
                     }
 
                     .banner-slogan {
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                     }
 
                     .personal-title {
@@ -201,8 +203,8 @@
     }
 
     .exp-client {
-        padding-block: 1rem;
-        padding-inline: 2rem;
+        // padding-block: 1rem;
+        // padding-inline: 1.5rem;
         width: 90vw;
         padding: 1.5rem;
         max-width: 1280px;
@@ -212,8 +214,8 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+        // margin-bottom: 1rem;
 
         .exp-title {
             font-family: "Gloock", serif;
