@@ -6,158 +6,140 @@
     align-items: center;
     justify-content: center;
 
-    .home-grid {
-        overflow: scroll !important;;
-        padding-block: 1rem;
-        padding-inline: 2rem;
+    .landing {
+        // border: 1px solid #fff;
+        overflow: hidden !important;
         width: 90vw;
-        padding: 1.5rem;
         max-width: 1280px;
-        // border-radius: 2rem;
-        transition: all 0.25s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
 
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-        // display: flex;
-        // flex-wrap: nowrap;
-        // justify-content: center;
-        // align-items: center;
-
-        gap: 1.5rem;
-
-        .tile,
-        .tile-nest,
-        .outlined-tile {
-            // border: 1px solid #fff;
-            aspect-ratio: 2/1;
-            border-radius: 2rem;
-        }
-
-        .tile {
-            padding: 2rem;
-            aspect-ratio: 2/1;
-            // padding-left: 0 !important;
-            display: flex;
-            width: auto;
+        .row {
+            width: 100%;
             height: auto;
             overflow: hidden;
-            flex-direction: column;
-            align-items: start;
-            justify-content: center;
-            background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0));
-            text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
-
-            .greeting {
-                // font-family: 'Times New Roman', Times, serif;
-                font-family: "Gloock", serif;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 1.2rem;
-                text-align: left;
-                line-height: 90%;
-                font-family: "Gloock", serif;
-
-                .ayden {
-                    font-style: italic;
-                    opacity: 1;
-                }
-            }
-
-            .banner-slogan {
-                margin-bottom: 1.5rem;
-                font-size: 1.8rem;
-                font-family: "Gloock", serif;
-                font-weight: 400;
-                font-style: normal;
-                // font-size: 1.5rem;
-                line-height: 3rem;
-
-                span {
-                    font-style: italic;
-                }
-            }
-
-            .personal-title {
-                opacity: 0.8;
-                line-height: 1.5rem;
-
-                .exp {
-                    opacity: 0.25;
-                }
-            }
-
-
-
-        }
-
-        .tile-nest {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            aspect-ratio: 2/1;
-        }
-
-        .nested-tile {
-            aspect-ratio: 1/1;
-            // border: 0.5px solid $color-nav-border;
-            box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.25);
-            background-color: $content-card;
-            border-radius: 2rem;
-            // padding: 2rem;
-            overflow: hidden;
             display: flex;
-            justify-content: center;
+            flex-direction: row;
             align-items: center;
-            transition: all 0.25s ease-in-out;
-            width: 100%;
-            height: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            // gap: 1.2rem;
 
+            .right,
+            .left {
+                border: 1px solid $content-border;
+                width: 49%;
+                height: 20rem;
+                border-radius: 1.5rem;
+                overflow: hidden;
+                // max-width: 49%;
+                img {
+                    vertical-align: middle;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: inline-block;
+                    transition: all 0.25s ease-in-out;
+                } 
+            }
 
-            img {
-                vertical-align: middle;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: inline-block;
-                transition: all 0.25s ease-in-out;
+            .right#r1,
+            .left#l2 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .nested {
+                    border: 0.5px solid $content-border;
+                    width: 48%;
+                    height: 20rem;
+                    border-radius: 1.5rem;
+                    overflow: hidden;
+
+                    img {
+                        vertical-align: middle;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: inline-block;
+                        transition: all 0.25s ease-in-out;
+                    }
+                }
+
+            }
+
+            .left#landing{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+                overflow: hidden;
+                gap: 1rem;
+                border: none;
+                background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0));
+                text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
+
+                .greeting {
+                    margin-left: 1.5rem;
+                    font-family: "Gloock", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 1.2rem;
+                    text-align: left;
+                    line-height: 90%;
+                    font-family: "Gloock", serif;
+
+                    .ayden {
+                        font-style: italic;
+                        opacity: 1;
+                    }
+                }
+
+                .banner-slogan {
+                    margin-left: 1.5rem;
+                    margin-bottom: 1.5rem;
+                    font-size: 1.8rem;
+                    font-family: "Gloock", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    // font-size: 1.5rem;
+                    line-height: 3rem;
+
+                    span {
+                        font-style: italic;
+                    }
+                }
+
+                .personal-title {
+                    margin-left: 1.5rem;
+                    opacity: 0.8;
+                    line-height: 1.5rem;
+
+                    .exp {
+                        opacity: 0.25;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1024px) {
+
+                .right,
+                .left {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                    // height: auto;
+                }
+
             }
         }
-
-        .nested-tile:hover {
-            transform: scale(1.02);
-        }
-
-        .outlined-tile {
-            display: flex;
-            height: 100%;
-            flex-direction: column;
-            // border: 0.5px solid $color-nav-border;
-            align-items: start;
-            justify-content: center;
-            box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.25);
-            background-color: $content-card;
-            transition: all 0.25s ease-in-out;
-            overflow: hidden;
-
-            .img2-1 {
-                vertical-align: middle;
-                width: auto;
-                height: 100%;
-                object-fit: cover;
-                display: inline-block;
-                transition: all 0.25s ease-in-out;
-            }
-        }
-
-        .outlined-tile:hover {
-            transform: scale(1.02);
-        }
-
     }
+
 
     .exp-client {
         padding-block: 1rem;
@@ -171,11 +153,12 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        margin-block: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
 
         .exp-title {
             font-family: "Gloock", serif;
-            margin-bottom: 1rem;
+            margin-bottom: 1.25rem;
             font-weight: 400;
             font-style: normal;
             font-size: 2rem;
@@ -254,32 +237,6 @@
         @media screen and (max-width: 400px) {
             .brand-logos {
                 transform: scale(0.7);
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .home {
-        .home-grid {
-            grid-template-columns: 1fr;
-            gap: 1rem;
-
-            .tile{
-                border-radius: 1rem;
-            }
-
-            .tile-nest{
-                gap: 1rem;
-                border-radius: 1rem;
-
-                .nested-tile{
-                    border-radius: 1rem;
-                }
-            }
-
-            .outlined-tile{
-                border-radius: 1rem;
             }
         }
     }
