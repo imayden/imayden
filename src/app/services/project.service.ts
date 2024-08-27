@@ -20,7 +20,7 @@ export class ProjectService {
   private projectsSubject: BehaviorSubject<Project[]> = new BehaviorSubject<Project[]>([
 
     {
-      title: 'MIUI 13 · Showcase',
+      title: 'MIUI Showcase',
       subtitle: 'Xiaomi, 2021',
       description: 'The showcase site for MIUI 13 (a legacy version of Xiaomi HyperOS), an animated site built with React, deployed on Vercel.',
       link: 'https://miui13.home.miui.com',
@@ -31,7 +31,7 @@ export class ProjectService {
     },
 
     {
-      title: 'Redmi Note 11 Series · Showcase',
+      title: 'Redmi Product Showcase',
       subtitle: 'Redmi, 2021',
       description: 'The smartphone product showcase site for Redmi Note 11 Series, an animated site built with React.',
       link: 'https://www.mi.com/global/product/redmi-note-11-pro-plus-5g/',
@@ -42,9 +42,9 @@ export class ProjectService {
     },
 
     {
-      title: 'HyperOS · Dark Theme',
-      subtitle: 'MIUI / HyperOS, 2021',
-      description: 'The design and developmeent of the Dark Theme UI for MIUI (legacy version of Xiaomi HyperOS).',
+      title: 'Dark Theme · AOSP UI',
+      subtitle: 'HyperOS, 2021',
+      description: 'The design & developmeent of the Dark Theme UI for MIUI (legacy version of HyperOS, Xiaomi’s custom AOSP UI).',
       link: 'https://www.mi.com/global/hyperos',
       media: {
         type: 'video',
@@ -66,7 +66,7 @@ export class ProjectService {
     {
       title: 'Distrubution Marketplace',
       subtitle: 'Kwai Shop, 2020',
-      description: 'The distrubution marketplace of Kwai Shop for creators & merchants to cooperate and sell goods.',
+      description: 'The cross-devices distrubution marketplace of Kwai Shop for creators & merchants to cooperate, built with Angular.',
       link: 'https://www.kwaixiaodian.com/cps',
       media: {
         type: 'image',
