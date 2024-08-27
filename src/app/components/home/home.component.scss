@@ -28,10 +28,56 @@
         }
 
         .tile {
+            padding: 2rem;
+            // padding-left: 0 !important;
             display: flex;
+            width: auto;
+            height: auto;
+            overflow: hidden;
             flex-direction: column;
             align-items: start;
             justify-content: center;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0));
+            text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
+
+            .greeting {
+                // font-family: 'Times New Roman', Times, serif;
+                font-family: "Gloock", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 1.2rem;
+                text-align: left;
+                line-height: 90%;
+                font-family: "Gloock", serif;
+
+                .ayden {
+                    font-style: italic;
+                    opacity: 1;
+                }
+            }
+
+            .banner-slogan{
+                margin-bottom: 1.5rem;
+                font-size: 1.8rem;
+                font-family: "Gloock", serif;
+                font-weight: 400;
+                font-style: normal;
+                // font-size: 1.5rem;
+                line-height: 3rem;
+
+                span{
+                    font-style: italic;
+                }
+            }
+
+            .personal-title{
+                opacity: 0.8;
+                line-height: 1.5rem;
+                .exp{
+                    opacity: 0.25;
+                }
+            }
+
 
 
         }
@@ -40,10 +86,13 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
         }
 
         .nested-tile {
-            border: 0.5px solid $color-nav-border;
+            // border: 0.5px solid $color-nav-border;
             box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.25);
             background-color: $content-card;
             border-radius: 2rem;
@@ -53,6 +102,8 @@
             justify-content: center;
             align-items: center;
             transition: all 0.25s ease-in-out;
+            width: 100%;
+            height: 100%;
 
 
             img {
@@ -71,8 +122,9 @@
 
         .outlined-tile {
             display: flex;
+            height: 100%;
             flex-direction: column;
-            border: 0.5px solid $color-nav-border;
+            // border: 0.5px solid $color-nav-border;
             align-items: start;
             justify-content: center;
             box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.25);
@@ -166,6 +218,7 @@
                 width: unset;
                 gap: 2rem;
                 transform: scale(1);
+
                 .logo-pair {
                     justify-content: space-between;
                 }
@@ -177,6 +230,7 @@
                 transform: scale(0.8);
             }
         }
+
         @media screen and (max-width: 400px) {
             .brand-logos {
                 transform: scale(0.7);
