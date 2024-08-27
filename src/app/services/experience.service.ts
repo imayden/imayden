@@ -29,7 +29,7 @@ export class ExperienceService {
       employer: 'Kwai',
       title: 'Product Engineer, Kwai Shop',
       duration: 'May, 2020 - Apr, 2021',
-      description: 'Crafted features for a distribution platform that was part of Kwai Shop, and led design and development on the Kwai Shop Creator Marketplace for enabling efficient cooperation between merchants & creates on Kwai.'
+      description: 'Crafted features for a distribution platform that was part of Kwai Shop, and led design and development on the Kwai Shop Creator Marketplace for enabling efficient cooperation between merchants & creators on Kwai.'
     },
   ]);
 
