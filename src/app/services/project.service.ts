@@ -21,7 +21,7 @@ export class ProjectService {
 
     {
       title: 'MIUI Showcase',
-      subtitle: 'Xiaomi, 2021',
+      subtitle: 'Xiaomi, 2021 · Product Engineer & Business Analyst',
       description: 'The showcase site for MIUI 13 (a legacy version of Xiaomi HyperOS), an animated site built with React, deployed on Vercel.',
       link: 'https://miui13.home.miui.com',
       media: {
@@ -32,7 +32,7 @@ export class ProjectService {
 
     {
       title: 'Redmi Product Showcase',
-      subtitle: 'Redmi, 2021',
+      subtitle: 'Redmi, 2021 · Product Engineer & Business Analyst',
       description: 'The smartphone product showcase site for Redmi Note 11 Series, an animated site built with React.',
       link: 'https://www.mi.com/global/product/redmi-note-11-pro-plus-5g/',
       media: {
@@ -43,7 +43,7 @@ export class ProjectService {
 
     {
       title: 'Dark Theme · AOSP UI',
-      subtitle: 'HyperOS, 2021',
+      subtitle: 'HyperOS, 2021 · Business Analyst',
       description: 'The design & developmeent of the Dark Theme UI for MIUI (legacy version of HyperOS, Xiaomi’s custom AOSP UI).',
       link: 'https://www.mi.com/global/hyperos',
       media: {
@@ -52,20 +52,9 @@ export class ProjectService {
       }
     },
 
-    // {
-    //   title: 'HyperOS · Dark Theme UI',
-    //   subtitle: 'HyperOS, 2021',
-    //   description: 'The product showcase site for Redmi 11 Series, an animated site built with React.',
-    //   link: 'https://www.mi.com/global/product/redmi-note-11-pro-plus-5g/',
-    //   media: {
-    //     type: 'image',
-    //     src: 'https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-12-lite/929ca834a3eff100dea8137ae43d6584.png'
-    //   }
-    // },
-
     {
       title: 'Distrubution Marketplace',
-      subtitle: 'Kwai Shop, 2020',
+      subtitle: 'Kwai Shop, 2020 · Product Engineer & Business Analyst',
       description: 'The cross-devices distrubution marketplace of Kwai Shop for creators & merchants to cooperate, built with Angular.',
       link: 'https://www.kwaixiaodian.com/cps',
       media: {
