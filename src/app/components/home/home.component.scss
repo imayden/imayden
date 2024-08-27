@@ -56,7 +56,7 @@
                 }
             }
 
-            .banner-slogan{
+            .banner-slogan {
                 margin-bottom: 1.5rem;
                 font-size: 1.8rem;
                 font-family: "Gloock", serif;
@@ -65,15 +65,16 @@
                 // font-size: 1.5rem;
                 line-height: 3rem;
 
-                span{
+                span {
                     font-style: italic;
                 }
             }
 
-            .personal-title{
+            .personal-title {
                 opacity: 0.8;
                 line-height: 1.5rem;
-                .exp{
+
+                .exp {
                     opacity: 0.25;
                 }
             }
@@ -160,10 +161,19 @@
         align-items: center;
         justify-content: center;
         gap: 1rem;
+        margin-block: 2rem;
 
         .exp-title {
-            // text-align: center;
-            // width: 100%;
+            font-family: "Gloock", serif;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 2rem;
+            text-align: left;
+            line-height: 90%;
+            font-family: "Gloock", serif;
+            overflow: visible;
+            text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
         }
 
         .brand-logos {

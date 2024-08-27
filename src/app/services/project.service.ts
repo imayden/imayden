@@ -64,8 +64,8 @@ export class ProjectService {
     // },
 
     {
-      title: 'Kwai Distrubution Marketplace',
-      subtitle: 'Kwai, 2020',
+      title: 'Distrubution Marketplace',
+      subtitle: 'Kwai Shop, 2020',
       description: 'The distrubution marketplace of Kwai Shop for creators & merchants to cooperate and sell goods.',
       link: 'https://www.kwaixiaodian.com/cps',
       media: {
