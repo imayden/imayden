@@ -71,19 +71,21 @@
                 .employer {
                     // text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
                     // font-family: "Gloock", serif;
-                    font-weight: 400;
+                    // font-weight: 400;
                     font-style: normal;
                     text-align: left;
                     width: 50%;
                     text-transform: capitalize;
+
+                    h1 {
+                        font-weight: 400;
+                    }
                 }
 
                 .description {
                     text-align: left;
                     width: 50%;
                     text-transform: capitalize;
-
-
 
                     .exp-title {
                         font-weight: 400;
