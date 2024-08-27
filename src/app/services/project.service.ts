@@ -21,7 +21,7 @@ export class ProjectService {
 
     {
       title: 'MIUI Showcase',
-      subtitle: 'Xiaomi, 2021 · Product Engineer & Business Analyst',
+      subtitle: 'Xiaomi, 2022 · Product Engineer & Business Analyst',
       description: 'The showcase site for MIUI 13 (a legacy version of Xiaomi HyperOS), an animated site built with React, deployed on Vercel.',
       link: 'https://miui13.home.miui.com',
       media: {
