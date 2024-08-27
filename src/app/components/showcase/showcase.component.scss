@@ -14,9 +14,10 @@
   box-shadow: 0 0 50px $color-box-shadow-light;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
+  overflow: hidden;
 
   .content {
-    border: $content-border;
+    // border: $content-border;
     border-radius: 1.5rem;
     overflow: hidden;
     padding-top: 1.5rem;
@@ -173,7 +174,7 @@
 
 
   .content:hover {
-    border: $content-border-hover;
+    // border: $content-border-hover;
 
     .content-area {
       padding-top: 1rem;
@@ -183,6 +184,10 @@
   .reg-text {
     opacity: 0.5;
   }
+}
+
+.showcase:hover {
+  border: $content-border-hover;
 }
 
 @media (prefers-color-scheme: dark) {
