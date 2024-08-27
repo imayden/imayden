@@ -66,11 +66,11 @@ export class ProjectService {
     {
       title: 'Kwai Distrubution Marketplace',
       subtitle: 'Kwai, 2020',
-      description: 'Description',
-      link: 'https://miui13.home.miui.com',
+      description: 'The distrubution marketplace of Kwai Shop for creators & merchants to cooperate and sell goods.',
+      link: 'https://www.kwaixiaodian.com/cps',
       media: {
         type: 'image',
-        src: 'https://www.youtube.com/embed/5MQR4ByVWRE?autoplay=1&loop=1&playlist=5MQR4ByVWRE&controls=0&mute=1'
+        src: 'https://raw.githubusercontent.com/imayden/imayden/main/public/assets/kwaishop-ecomm.png'
       }
     },
   ]);
