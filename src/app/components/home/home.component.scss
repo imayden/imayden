@@ -37,6 +37,7 @@
                 // overflow: hidden;
                 transition: all 0.25s ease-in-out;
 
+
                 img {
                     vertical-align: middle;
                     width: 100%;
@@ -89,7 +90,7 @@
                 align-items: start;
                 justify-content: center;
                 overflow: hidden;
-                gap: 1rem;
+                // gap: 1rem;
                 border: none;
                 background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0));
                 text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
@@ -101,7 +102,7 @@
                     font-style: normal;
                     font-size: 1.2rem;
                     text-align: left;
-                    line-height: 90%;
+                    // line-height: 90%;
                     font-family: "Gloock", serif;
 
                     .ayden {
@@ -110,15 +111,17 @@
                     }
                 }
 
+                
+
                 .banner-slogan {
                     margin-left: 1.5rem;
-                    margin-bottom: 1.5rem;
+                    margin-bottom: 1rem;
                     font-size: 1.8rem;
                     font-family: "Gloock", serif;
                     font-weight: 400;
                     font-style: normal;
                     // font-size: 1.5rem;
-                    line-height: 3rem;
+                    line-height: 100%;
 
                     span {
                         font-style: italic;
@@ -133,6 +136,21 @@
                     .exp {
                         opacity: 0.25;
                     }
+                }
+
+                @media screen and (max-width: 600px) {
+                    .greeting {
+                        font-size: 0.8rem;
+                    }
+
+                    .banner-slogan {
+                        font-size: 1rem;
+                    }
+
+                    .personal-title {
+                        font-size: 0.8rem;
+                    }
+                    
                 }
             }
 
@@ -154,6 +172,33 @@
         }
     }
 
+    @media screen and (max-width: 991px) {
+        .landing {
+            gap: 0.75rem;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .landing {
+            gap: 0.3rem;
+            .right,
+            .left, 
+            .nested {
+                height: 15rem !important;
+            }
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .landing {
+            gap: 0.3rem;
+            .right,
+            .left, 
+            .nested {
+                height: 12rem !important;
+            }
+        }
+    }
 
     .exp-client {
         padding-block: 1rem;
@@ -181,6 +226,13 @@
             font-family: "Gloock", serif;
             overflow: visible;
             text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
+        }
+
+        @media screen and (max-width: 600px) {
+            .exp-title {
+                font-size: 1.5rem;
+            }
+            
         }
 
         .brand-logos {
