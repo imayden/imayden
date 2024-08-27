@@ -1,1 +1,24 @@
-<p>about works!</p>
+<div class="body">
+    <div class="about">
+        <p>about works!</p>
+
+        <hr class="divider">
+        <div class="experience">
+            <div class="section-title">
+                <span class="dot">·</span>
+                <h6><span class="heading6">EXPERIENCE</span></h6>
+            </div>
+
+            <div class="exp-sec" *ngFor="let experience of experiences$ | async">
+                <div class="employer">
+                    <h1 class="exp-emp">{{experience.employer}}</h1>
+                </div>
+                <div class="description">
+                    <h3 class="exp-title">{{experience.title}}</h3>
+                    <p class="exp-dura">{{experience.duration}}</p>
+                    <p class="exp-des">{{experience.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

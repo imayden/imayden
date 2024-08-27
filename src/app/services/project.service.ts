@@ -4,6 +4,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 export interface Project {
   title: string;
   subtitle: string;
+  position: string;
   description: string;
   link: string;
   media: {
@@ -21,7 +22,8 @@ export class ProjectService {
 
     {
       title: 'MIUI Showcase',
-      subtitle: 'Xiaomi, 2022 · Product Engineer & Business Analyst',
+      subtitle: 'Xiaomi, 2022',
+      position: ' Product Engineer & Business Analyst',
       description: 'The showcase site for MIUI 13 (a legacy version of Xiaomi HyperOS), an animated site built with React, deployed on Vercel.',
       link: 'https://miui13.home.miui.com',
       media: {
@@ -32,7 +34,8 @@ export class ProjectService {
 
     {
       title: 'Redmi Product Showcase',
-      subtitle: 'Redmi, 2021 · Product Engineer & Business Analyst',
+      subtitle: 'Redmi, 2021',
+      position: ' Product Engineer & Business Analyst',
       description: 'The smartphone product showcase site for Redmi Note 11 Series, an animated site built with React.',
       link: 'https://www.mi.com/global/product/redmi-note-11-pro-plus-5g/',
       media: {
@@ -43,7 +46,8 @@ export class ProjectService {
 
     {
       title: 'Dark Theme · AOSP UI',
-      subtitle: 'HyperOS, 2021 · Business Analyst & Product Designer',
+      subtitle: 'HyperOS, 2021',
+      position: ' Product Designer & Business Analyst',
       description: 'The design & developmeent of the Dark Theme UI for MIUI (legacy version of HyperOS, Xiaomi’s custom AOSP UI).',
       link: 'https://www.mi.com/global/hyperos',
       media: {
@@ -54,7 +58,8 @@ export class ProjectService {
 
     {
       title: 'Distrubution Marketplace',
-      subtitle: 'Kwai Shop, 2020 · Product Engineer & Business Analyst',
+      subtitle: 'Kwai Shop, 2020',
+      position: ' Product Engineer & Business Analyst',
       description: 'The cross-devices distrubution marketplace of Kwai Shop for creators & merchants to cooperate, built with Angular.',
       link: 'https://www.kwaixiaodian.com/cps',
       media: {

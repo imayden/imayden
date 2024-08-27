@@ -1,0 +1,97 @@
+@import '../../../variables';
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .about {
+        margin: 1.5rem;
+        width: 88vw;
+        max-width: 1280px;
+        border: 1px solid white;
+
+        .divider {
+            opacity: 0.25;
+        }
+
+        .experience {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-block: 2rem;
+            text-align: left;
+
+            .section-title {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+
+                .heading6 {
+                    opacity: 0.35;
+                    padding-top: 0.2rem;
+                }
+
+                .dot {
+                    font-size: 5rem;
+                    padding: 0;
+                    margin: 0;
+                    line-height: 1rem;
+                    text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
+                }
+            }
+
+            .exp-sec {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: start;
+                width: 100%;
+                margin-top: 2rem;
+
+                .employer {
+                    // text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
+                    // font-family: "Gloock", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    text-align: left;
+                    width: 50%;
+                    text-transform: capitalize;
+                }
+
+                .description {
+                    text-align: left;
+                    width: 50%;
+                    text-transform: capitalize;
+
+
+
+                    .exp-title {
+                        font-weight: 400;
+
+                    }
+
+                    .exp-dura {
+                        opacity: 0.35;
+                    }
+
+                    .exp-des {
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+}
