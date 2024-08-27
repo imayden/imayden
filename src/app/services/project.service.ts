@@ -43,7 +43,7 @@ export class ProjectService {
 
     {
       title: 'Dark Theme · AOSP UI',
-      subtitle: 'HyperOS, 2021 · Business Analyst',
+      subtitle: 'HyperOS, 2021 · Business Analyst & Product Designer',
       description: 'The design & developmeent of the Dark Theme UI for MIUI (legacy version of HyperOS, Xiaomi’s custom AOSP UI).',
       link: 'https://www.mi.com/global/hyperos',
       media: {
