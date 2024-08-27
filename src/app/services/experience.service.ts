@@ -19,12 +19,12 @@ export class ExperienceService {
       duration: 'Sep, 2021 - Jul, 2022',
       description: "Built websites and system UI features for MIUI / HyperOS, Xiaomi's custom AOSP UI for its smartphones & tablets. Led the design and development of MIUI's showcase site and owned the product HyperOS Dark Theme UI."
     },
-    {
-      employer: 'Baidu',
-      title: 'Product Engineer, DU Shop Ecomm',
-      duration: 'May, 2021 - Aug, 2021',
-      description: "Owned a product that was part of DU Shop's e-comm suites, and led the building of the app features to enhance the buyers' shopping experience in the live room."
-    },
+    // {
+    //   employer: 'Baidu',
+    //   title: 'Product Engineer, DU Shop Ecomm',
+    //   duration: 'May, 2021 - Aug, 2021',
+    //   description: "Owned a product that was part of DU Shop's e-comm suites, and led the building of the app features to enhance the buyers' shopping experience in the live room."
+    // },
     {
       employer: 'Kwai',
       title: 'Product Engineer, Kwai Shop',
