@@ -10,10 +10,10 @@
         margin: 1.5rem;
         width: 88vw;
         max-width: 1280px;
-        border: 1px solid white;
+        // border: 1px solid white;
 
         .divider {
-            opacity: 0.25;
+            opacity: 0.1;
         }
 
         .experience {
@@ -44,6 +44,19 @@
                     margin: 0;
                     line-height: 1rem;
                     text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
+                }
+            }
+
+            .landing {
+                width: 100%;
+                .landing-title{
+                    margin-block: 10rem;
+                    text-shadow: 0 5px 10px #0057ff26, 0 -5px 10px #ff5a001a, 0 -5px 25px #ffffff4d;
+                    font-family: "Gloock", serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 3rem;
+                    text-align: left;
                 }
             }
 
@@ -83,6 +96,7 @@
 
                     .exp-des {
                         opacity: 0.5;
+                        line-height: 1.5rem;
                     }
                 }
             }
