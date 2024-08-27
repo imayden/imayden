@@ -154,15 +154,18 @@
                 .description {
                     text-align: left;
                     width: 50%;
-                    text-transform: capitalize;
-
+                    
                     .exp-title {
                         font-weight: 400;
+                        text-transform: capitalize;
+
 
                     }
 
                     .exp-dura {
                         opacity: 0.35;
+                        text-transform: capitalize;
+
                     }
 
                     .exp-des {
