@@ -69,7 +69,7 @@ export class ProjectService {
       description: 'Description',
       link: 'https://miui13.home.miui.com',
       media: {
-        type: 'video',
+        type: 'image',
         src: 'https://www.youtube.com/embed/5MQR4ByVWRE?autoplay=1&loop=1&playlist=5MQR4ByVWRE&controls=0&mute=1'
       }
     },
