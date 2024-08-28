@@ -57,7 +57,7 @@ export class ProjectService {
     },
 
     {
-      title: 'Distrubution Marketplace',
+      title: 'Distribution Marketplace',
       subtitle: 'Kwai Shop, 2020',
       position: ' Product Engineer & Business Analyst',
       description: 'The cross-devices distrubution marketplace of Kwai Shop for creators & merchants to cooperate, built with Angular.',
