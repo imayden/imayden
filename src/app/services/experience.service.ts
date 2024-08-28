@@ -15,7 +15,7 @@ export class ExperienceService {
   private experiencesSubject: BehaviorSubject<Experience[]> = new BehaviorSubject<Experience[]>([
     {
       employer: 'Xiaomi',
-      title: 'Product Engineer, MIUI & HyperOS',
+      title: 'Software Product Engineer, MIUI & HyperOS',
       duration: 'Sep, 2021 - Jul, 2022',
       description: "Built websites and system UI features for MIUI / HyperOS, Xiaomi's custom AOSP UI for its smartphones & tablets. Led the design and development of MIUI's showcase site and owned the product HyperOS Dark Theme UI."
     },
@@ -27,7 +27,7 @@ export class ExperienceService {
     // },
     {
       employer: 'Kwai',
-      title: 'Product Engineer, Kwai Shop',
+      title: 'Software Product Engineer, Kwai Shop',
       duration: 'May, 2020 - Apr, 2021',
       description: 'Crafted features for a distribution platform that was part of Kwai Shop, and led design and development on the Kwai Shop Creator Marketplace for enabling efficient cooperation between merchants & creators on Kwai.'
     },
