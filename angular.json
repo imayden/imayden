@@ -33,7 +33,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+
+              {
+                "input": "src/app/shop/shop.component.scss"
+              }
             ],
             "inlineStyleLanguage": "scss",
             "scripts": [],

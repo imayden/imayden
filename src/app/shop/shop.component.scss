@@ -14,9 +14,8 @@
  * limitations under the License.
  */
 @use '@angular/material' as mat;
-@use '@angular/cdk';
-@use '@angular/cdk/a11y' as cdk-a11y;
-@use '@angular/material' as mat;
+@use '@angular/cdk/a11y/a11y';
+
 
 // TODO: #12. Enable HighContrast mode
 
