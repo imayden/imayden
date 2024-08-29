@@ -15,7 +15,7 @@ export class ExperienceService {
   private experiencesSubject: BehaviorSubject<Experience[]> = new BehaviorSubject<Experience[]>([
     {
       employer: 'Self-employed',
-      title: 'Web Developer, Angular, React, and WordPress',
+      title: 'Web Developer',
       duration: 'Aug, 2022 - Present',
       description: "Design and develop aesthetic websites for individual professionals and business owners, specializing in Angular, React, and WordPress."
     },
