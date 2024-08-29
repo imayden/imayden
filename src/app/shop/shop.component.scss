@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 @use '@angular/material' as mat;
-@use '@angular/cdk/a11y/a11y';
+// @use '@angular/cdk/a11y/';
+@use '@angular/cdk/a11y' as cdkA11y; 
+
 
 
 // TODO: #12. Enable HighContrast mode
@@ -94,7 +96,7 @@
     background-color: mat.get-color-from-palette(mat.$pink-palette, A100);
 
     // TODO: #12. Enable HighContrast mode
-    @include cdk-high-contrast {
+    @include cdkA11y.high-contrast {
       outline: solid 1px;
       background-color: mat.get-color-from-palette(mat.$pink-palette, 50);
     }
@@ -117,7 +119,7 @@
   .purchase-button {
     background-color: mat.get-color-from-palette(mat.$light-green-palette, A100);
 
-    @include cdk-high-contrast {
+    @include cdkA11y.high-contrast {
       outline: solid 1px;
       background-color: mat.get-color-from-palette(mat.$light-green-palette, 50);
     }
