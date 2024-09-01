@@ -13,10 +13,6 @@ export const routes: Routes = [
         component: AboutComponent,
     },
     {
-        path: 'work-miui',
-        component: MiuiComponent,
-    },
-    {
         path: '**',
         redirectTo: '',
     },
