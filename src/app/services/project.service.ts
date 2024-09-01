@@ -64,7 +64,7 @@ export class ProjectService {
       link: 'https://www.kwaixiaodian.com/cps',
       media: {
         type: 'image',
-        src: 'https://raw.githubusercontent.com/imayden/imayden/main/public/assets/kwaishop-ecomm.png'
+        src: 'https://raw.githubusercontent.com/imayden/imayden/main/public/covers/kwaishop-ecomm.png'
       }
     },
   ]);
