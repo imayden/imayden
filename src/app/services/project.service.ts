@@ -26,6 +26,7 @@ export class ProjectService {
       position: ' Product Engineer & Business Analyst',
       description: 'The showcase site for MIUI 13 (a legacy version of Xiaomi HyperOS), an animated site built with React, deployed on Vercel.',
       link: 'https://miui13.home.miui.com',
+      // link: 'work-miui',
       media: {
         type: 'video',
         src: 'https://www.youtube.com/embed/7SIDnTiQGmM?autoplay=1&loop=1&playlist=7SIDnTiQGmM&controls=0&mute=1&vq=hd1080'
