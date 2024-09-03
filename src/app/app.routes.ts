@@ -13,6 +13,10 @@ export const routes: Routes = [
         component: AboutComponent,
     },
     {
+        path: 'miui-showcase',
+        component: MiuiComponent,
+    },
+    {
         path: '**',
         redirectTo: '',
     },
