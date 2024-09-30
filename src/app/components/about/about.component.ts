@@ -31,7 +31,7 @@ export class AboutComponent implements OnInit {
   myTimeZone():void{
     const date = new Date();
     const options: Intl.DateTimeFormatOptions = {
-      timeZone: 'America/New_York',
+      timeZone: 'America/Los_Angeles',
       hour: '2-digit',
       minute: '2-digit',
       second: '2-digit',
