@@ -23,8 +23,8 @@ export class ProjectService {
     {
       title: 'MIUI Showcase',
       subtitle: 'Xiaomi, 2022',
-      position: ' Product Engineer & Business Analyst',
-      description: 'The showcase site for MIUI 13 (a legacy version of Xiaomi HyperOS), an animated site built with React, deployed on Vercel.',
+      position: 'Product Manager',
+      description: 'The showcase site for MIUI 13 (a legacy version of Xiaomi HyperOS) with animated and storytelling interaction.',
       link: '/miui-showcase',
       media: {
         type: 'video',
@@ -35,8 +35,8 @@ export class ProjectService {
     {
       title: 'Redmi Product Showcase',
       subtitle: 'Redmi, 2021',
-      position: ' Product Engineer & Business Analyst',
-      description: 'The smartphone product showcase site for Redmi Note 11 Series, an animated site built with React.',
+      position: 'Product Manager',
+      description: 'The smartphone product showcase site for Redmi Note 11 Series showcasing features and specs with animation.',
       link: '/redmi-showcase',
       media: {
         type: 'video',
@@ -47,7 +47,7 @@ export class ProjectService {
     {
       title: 'Dark Theme · AOSP UI',
       subtitle: 'HyperOS, 2021',
-      position: ' Product Designer & Business Analyst',
+      position: 'Product Manager',
       description: 'The design & development of the Dark Theme UI for MIUI (legacy version of HyperOS, Xiaomi’s custom AOSP UI).',
       link: '/darkmode',
       media: {
@@ -59,8 +59,8 @@ export class ProjectService {
     {
       title: 'Distribution Marketplace',
       subtitle: 'Kwai Shop, 2020',
-      position: ' Product Engineer & Business Analyst',
-      description: 'The distribution marketplace of Kwai Shop, a web app embedded in the Kwai App for creators & merchants to cooperate, built with Angular.',
+      position: 'Product Manager',
+      description: 'The distribution marketplace of Kwai Shop, a cross-device web app for creators & merchants to cooperate.',
       link: '/kwai-dm',
       media: {
         type: 'image',
