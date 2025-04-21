@@ -19,12 +19,12 @@ export class ExperienceService {
       duration: 'Sep, 2024 - Present',
       description: "Manage product roadmaps, design and develop software and games with a focus on iGaming and video games."
     },
-    {
-      employer: 'Self-employed',
-      title: 'Web Designer & Developer',
-      duration: 'Aug, 2022 - Present',
-      description: "Design and develop aesthetic websites for individual professionals and business owners, specializing in Angular, React, and WordPress."
-    },
+    // {
+    //   employer: 'Self-employed',
+    //   title: 'Web Designer & Developer',
+    //   duration: 'Aug, 2022 - Present',
+    //   description: "Design and develop aesthetic websites for individual professionals and business owners, specializing in Angular, React, and WordPress."
+    // },
     {
       employer: 'Xiaomi',
       title: 'Product Manager, MIUI & HyperOS',
