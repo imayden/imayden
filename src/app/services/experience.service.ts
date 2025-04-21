@@ -28,7 +28,7 @@ export class ExperienceService {
     {
       employer: 'Xiaomi',
       title: 'Product Manager, MIUI & HyperOS',
-      duration: 'Sep, 2021 - Jul, 2022',
+      duration: 'Sep, 2021 - Aug, 2022',
       description: "Built websites and system UI features for MIUI / HyperOS, Xiaomi's custom AOSP UI for its smartphones & tablets. Led the design and development of MIUI's showcase site and owned the product HyperOS Dark Theme UI."
     },
     {
