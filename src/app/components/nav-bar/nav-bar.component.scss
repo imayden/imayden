@@ -92,8 +92,8 @@
 
         a:hover {
             opacity: 1;
-            transform: scale(1.05);
-            background-image: $nav-btn-hover-light-theme;
+            transform: scale(1.1);
+            // background-image: $nav-btn-hover-light-theme;
         }
 
         a:active {
@@ -150,8 +150,8 @@
 
         .email:hover {
             opacity: 1;
-            transform: scale(1.05);
-            background-image: $nav-btn-hover-light-theme;
+            transform: scale(1.1);
+            // background-image: $nav-btn-hover-light-theme;
         }
 
         .email:active {
